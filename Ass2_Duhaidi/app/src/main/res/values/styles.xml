@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/White</item>
+    </style>
+
+    <style name="checkBoxStyle" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:buttonTint">@color/Red</item>
+    </style>
+</resources>
