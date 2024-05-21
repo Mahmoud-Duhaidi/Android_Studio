@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:background="@color/green"
+        android:orientation="horizontal">
+
+
+
+        <ImageView
+            android:layout_width="205dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="94dp"
+            android:src="@drawable/list" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button_myMeal"
+                android:background="@drawable/mymeal"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="0dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Meal"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="13dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="379dp"
+        android:layout_height="585dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/app_background_blur">
+
+        <ListView
+            android:id="@+id/listViewCafeteria"
+            android:layout_width="match_parent"
+            android:layout_height="588dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="0dp"
+            android:background="#9C0BA134"
+
+            android:orientation="vertical" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

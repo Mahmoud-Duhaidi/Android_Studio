@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    tools:context=".activity.MainActivity5_studentHome">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:background="@color/green"
+        android:orientation="horizontal">
+
+
+
+        <ImageView
+            android:layout_width="205dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="99dp"
+            android:src="@drawable/birzeit_logo" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button_logout"
+                android:background="@drawable/logout"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="0dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Log Out"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="13dp"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <!-- Center -->
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="380dp"
+        android:layout_height="510dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="6dp"
+        android:background="@drawable/app_background_blur">
+
+        <Button
+            android:id="@+id/button1_univMap"
+            android:background="@drawable/univ_map_icon"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"/>
+
+        <TextView
+            android:id="@+id/textView_univ_map_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BZU Map"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/button1_univMap"
+            android:layout_marginLeft="68dp"/>
+
+        <TextView
+            android:id="@+id/textView_univ_map_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BZU Map"
+            android:textStyle="bold"
+            android:textColor="@color/yellow"
+            android:textSize="12dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/button1_univMap"
+            android:layout_marginLeft="68dp"/>
+
+        <Button
+            android:id="@+id/button2_faculity"
+            android:background="@drawable/faculity_icon"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_toEndOf="@id/button1_univMap"
+            android:layout_marginLeft="82dp"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:id="@+id/textView_faculity_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Faculties"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:textColor="@color/white"
+            android:layout_toEndOf="@id/button1_univMap"
+            android:layout_below="@+id/button2_faculity"
+            android:layout_marginLeft="120dp"/>
+
+        <TextView
+            android:id="@+id/textView_faculity_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Faculties"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:textColor="@color/yellow"
+            android:layout_toEndOf="@id/button1_univMap"
+            android:layout_below="@+id/button2_faculity"
+            android:layout_marginLeft="120dp"/>
+
+        <Button
+            android:id="@+id/button3_payment"
+            android:background="@drawable/payment"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/button1_univMap"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="30dp"/>
+
+        <TextView
+            android:id="@+id/textView_payment_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="7dp"
+            android:layout_below="@+id/button3_payment"
+            android:layout_marginLeft="69dp"/>
+
+        <TextView
+            android:id="@+id/textView_payment_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment"
+            android:textStyle="bold"
+            android:textColor="@color/yellow"
+            android:textSize="12dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="7dp"
+            android:layout_below="@+id/button3_payment"
+            android:layout_marginLeft="69dp"/>
+
+        <Button
+            android:id="@+id/button4_cafeteria"
+            android:background="@drawable/cafeteria"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_toEndOf="@id/button3_payment"
+            android:layout_below="@+id/button2_faculity"
+            android:layout_marginLeft="82dp"
+            android:layout_marginTop="70dp" />
+
+        <TextView
+            android:id="@+id/textView_cafeteria_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cafeteria"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:textColor="@color/white"
+            android:layout_toEndOf="@id/button3_payment"
+            android:layout_below="@+id/button4_cafeteria"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="115dp"/>
+
+        <TextView
+            android:id="@+id/textView_cafeteria_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cafeteria"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:textColor="@color/yellow"
+            android:layout_toEndOf="@id/button3_payment"
+            android:layout_below="@+id/button4_cafeteria"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="115dp"/>
+
+        <Button
+            android:id="@+id/button5_task"
+            android:background="@drawable/task"
+            android:layout_width="140dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/button3_payment"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="23dp"/>
+
+        <TextView
+            android:id="@+id/textView_task_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Task"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="7dp"
+            android:layout_below="@+id/button5_task"
+            android:layout_marginLeft="82dp"/>
+
+        <TextView
+            android:id="@+id/textView_task_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Task"
+            android:textStyle="bold"
+            android:textColor="@color/yellow"
+            android:textSize="12dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="7dp"
+            android:layout_below="@+id/button5_task"
+            android:layout_marginLeft="82dp"/>
+
+        <Button
+            android:id="@+id/button6_grade"
+            android:background="@drawable/ac_grade"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_toEndOf="@id/button5_task"
+            android:layout_below="@+id/button4_cafeteria"
+            android:layout_marginLeft="72dp"
+            android:layout_marginTop="70dp"/>
+
+        <TextView
+            android:id="@+id/textView_grade_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Academic grade"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:textColor="@color/white"
+            android:layout_toEndOf="@id/button5_task"
+            android:layout_below="@+id/button6_grade"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="85dp"/>
+
+        <TextView
+            android:id="@+id/textView_grade_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Academic grade"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:textColor="@color/yellow"
+            android:layout_toEndOf="@id/button5_task"
+            android:layout_below="@+id/button6_grade"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="85dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative"
+        android:background="@color/WhiteGreen"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="20dp">
+
+            <Button
+                android:id="@+id/button_home"
+                android:background="@drawable/home_clicked"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textStyle="bold"
+                android:textColor="@color/green"
+                android:textSize="15dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="1dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="110dp">
+
+            <Button
+                android:id="@+id/button_user"
+                android:background="@drawable/user"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="1dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="110dp">
+
+            <Button
+                android:id="@+id/button_info"
+                android:background="@drawable/info"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Info"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="8dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

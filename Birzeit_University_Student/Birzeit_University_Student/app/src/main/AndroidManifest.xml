@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/birzeit_logo"
+        android:label="BZU univ student"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+
+        <!-- start activity: splash screen -->
+        <activity
+            android:name=".activity.MainActivity0_animSplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- first activity: Log in -->
+        <activity
+            android:name=".activity.MainActivity1_login"
+            android:exported="false">
+        </activity>
+
+        <!-- ============================================================ -->
+        <!-- second activity: Admin Home -->
+        <activity
+            android:name=".activity.MainActivity2_adminHome"
+            android:exported="false">
+        </activity>
+
+        <!-- ============================================================ -->
+        <!-- third activity: Admin Student Details -->
+        <activity
+            android:name=".activity.MainActivity3_adminStudentDetails"
+            android:exported="false">
+        </activity>
+
+        <!-- ============================================================ -->
+        <!-- forth activity: Admin Student Details -->
+        <activity
+            android:name=".activity.MainActivity4_adminAddStudent"
+            android:exported="false">
+        </activity>
+
+        <!-- ============================================================ -->
+        <!-- fifth activity: Student Home -->
+        <activity
+            android:name=".activity.MainActivity5_studentHome"
+            android:exported="false">
+        </activity>
+
+        <!-- ============================================================ -->
+        <!-- activity: Student Details -->
+        <activity
+            android:name=".activity.MainActivity6_studentDetails"
+            android:exported="false">
+        </activity>
+
+        <!-- ============================================================ -->
+        <!-- activity: Info -->
+        <activity
+            android:name=".activity.MainActivity7_info"
+            android:exported="false">
+        </activity>
+
+        <!-- ============================================================ -->
+        <!-- activity: Bzu Map-->
+        <activity
+            android:name=".activity.MainActivity8_1_BzuMap"
+            android:exported="false">
+        </activity>
+
+        <!-- ============================================================ -->
+        <!-- activity: Bzu Map-->
+        <activity
+            android:name=".activity.MainActivity8_2_BzuMap"
+            android:exported="false">
+        </activity>
+
+        <!-- ============================================================ -->
+        <!-- activity: Faculites-->
+        <activity
+            android:name=".activity.MainActivity9_1_faculites"
+            android:exported="false">
+        </activity>
+
+        <!-- ============================================================ -->
+        <!-- activity: Faculites Details-->
+        <activity
+            android:name=".activity.MainActivity9_2_faculitesDetails"
+            android:exported="false">
+        </activity>
+
+        <!-- ============================================================ -->
+        <!-- activity: payment -->
+        <activity
+            android:name=".activity.MainActivity10_payment"
+            android:exported="false">
+        </activity>
+
+        <!-- ============================================================ -->
+        <!--  activity: Cafeterias  -->
+        <activity
+            android:name=".activity.MainActivity11_1_cafeteria"
+            android:exported="false">
+        </activity>
+
+        <!--  ============================================================  -->
+        <!--  activity: Specific Cafeteria  -->
+        <activity
+            android:name=".activity.MainActivity11_2_cafeteriaDetails"
+            android:exported="false">
+        </activity>
+
+        <!--  ============================================================  -->
+        <!--  activity: My Meal  -->
+        <activity
+            android:name=".activity.MainActivity11_3_myMeal"
+            android:exported="false">
+        </activity>
+
+        <!-- ============================================================ -->
+        <!-- activity: Task Home -->
+        <activity
+            android:name=".activity.MainActivity12_1_taskHome"
+            android:exported="false">
+        </activity>
+
+        <!-- ============================================================ -->
+        <!-- activity: Add New Task -->
+        <activity
+            android:name=".activity.MainActivity12_2_addNewTask"
+            android:exported="false">
+        </activity>
+
+        <!-- ============================================================ -->
+        <!-- activity: Done Task -->
+        <activity
+            android:name=".activity.MainActivity12_3_doneTask"
+            android:exported="false">
+        </activity>
+
+        <!-- ============================================================ -->
+        <!-- activity: Due Task Details-->
+        <activity
+            android:name=".activity.MainActivity12_4_DueTaskDetails"
+            android:exported="false">
+        </activity>
+
+        <!-- ============================================================ -->
+        <!-- activity: Done Task Details-->
+        <activity
+            android:name=".activity.MainActivity12_5_DoneTaskDetails"
+            android:exported="false">
+        </activity>
+
+        <!-- ============================================================ -->
+        <!-- activity: Grade-->
+        <activity
+            android:name=".activity.MainActivity13_grade"
+            android:exported="false">
+        </activity>
+
+
+
+    </application>
+
+</manifest>

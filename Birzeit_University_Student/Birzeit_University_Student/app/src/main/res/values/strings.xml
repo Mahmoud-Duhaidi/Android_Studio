@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Birzeit University Student</string>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/green</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <style name="GreenCheckBoxStyle" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:buttonTint">@color/green</item>
+    </style>
+
+    <style name="GreenButtonStyle" parent="@android:style/Widget.Button">
+        <item name="android:backgroundTint">@color/green</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="RedButtonStyle" parent="@android:style/Widget.Button">
+        <item name="android:backgroundTint">@color/red</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

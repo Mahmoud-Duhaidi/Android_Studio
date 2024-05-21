@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:background="@color/green"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="205dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="94dp"
+            android:src="@drawable/list" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button_myMeal"
+                android:background="@drawable/mymeal"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="0dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Meal"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="13dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="379dp"
+        android:layout_height="585dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/app_background_blur">
+
+        <TextView
+            android:id="@+id/textViewHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:text="Cafeteria Name"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/ChooseCategorySpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/textViewHint"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/btnSearch"
+            android:backgroundTint="@color/black"
+            />
+        
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/textViewHint"
+            android:layout_alignParentRight="true"
+            android:text="Search"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/productRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="473dp"
+            android:layout_marginTop="30dp"
+            android:scrollbars="vertical"
+            android:layout_below="@+id/ChooseCategorySpinner"
+            />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
